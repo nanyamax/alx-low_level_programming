@@ -19,11 +19,11 @@ int main(void)
 	l_digits = n % 10;
 
 	if (l_digits > 5)
-		printf("last digit of %d is %d and is greater than 5\n", n, l_digits);
+		printf("Last digit of %d is %d and is greater than 5\n", n, l_digits);
 	if (l_digits == 0)
-		printf("last digit of %d is %d and is 0\n", n, l_digits);
+		printf("Last digit of %d is %d and is 0\n", n, l_digits);
 	if (l_digits < 6 && l_digits != 0)
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, l_digits);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l_digits);
 	return (0);
 }
 
