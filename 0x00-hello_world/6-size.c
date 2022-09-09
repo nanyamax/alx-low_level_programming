@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Takes no argument
+ * main - program starts and ends in this function
+ * takes no arguments
  *
- * Description: prints the bytes for various data types to stdo
- * Return: Always 0 (success)
+ * Description: determine the size of various data types on a computer
+ * Return: returns 0
  */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float e;
 
-	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
-	printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
-	printf("size of long int: %lu byte(s)\n", (unsigned long)sizeof(c));
-	printf("size of long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
-	printf("size of float: %lu byte(s)\n", (unsigned long)sizeof(e));
+	char c;
+	int i;
+	long int li;
+	long long int lli;
+	float f;
+
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(li));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(lli));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 
 	return (0);
 }
