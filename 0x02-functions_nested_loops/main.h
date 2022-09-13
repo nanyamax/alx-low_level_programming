@@ -1,1 +1,1 @@
-char string[]= ' _putchar';
+char string_name[]="' _putchar";

@@ -7,9 +7,10 @@
  * Description: prints a set of strings without printf
  * Return: 0 on success
  */
-main(void)
+int main(void)
 {
-	putchar(string);
+	putchar(string_name);
 	putchar('\n');
 	return (0);
 }
+
