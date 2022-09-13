@@ -7,11 +7,9 @@
  */
 int main(void)
 {
-	char Var = a;
-
-	for (Var = ‘a’; Var <= ‘z’; Var++)
-		putchar(Var);
-		putchar(Var);
+	for (c = ‘a’; c <= ‘z’; c++)
+		_putchar(c);
+		_putchar('\n');
 		return (0);
 }
 
