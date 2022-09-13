@@ -1,15 +1,22 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * main - prints putchar
  *
  * Description: prints a set of strings without printf
  * Return: 0 on success
  */
 int main(void)
 {
-	putchar(string_name);
-	putchar('\n');
+	_putchar("_");
+	_putchar("p");
+	_putchar("u");
+	_putchar("t");
+	_putchar("c");
+	_putchar("h");
+	_putchar("a");
+	_putchar("r");
+	_putchar("\n");
 	return (0);
 }
 
