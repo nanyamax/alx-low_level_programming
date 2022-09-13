@@ -5,9 +5,9 @@
  *
  * Return: 0 on success
  */
-int main()
+int main(void)
 {
-	for (c= ‘a’; c<= ‘z’; c++)
+	for (c = ‘a’; c <= ‘z’; c++)
 
 		_putchar(c);
 		_putchar('\n');
