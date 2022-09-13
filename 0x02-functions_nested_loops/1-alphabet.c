@@ -6,7 +6,7 @@
  * Description: a function to print all lowercase alphabets
  * Return: 0 on success
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char a = 'a';
 
