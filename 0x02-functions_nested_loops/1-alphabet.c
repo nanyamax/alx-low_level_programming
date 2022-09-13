@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - print alphabet
+ * print_alphabet - print alphabet
  *
  * Return: 0 on success
  */
-int main(void)
+void print_alphabet(void)
 {
 	for (c = ‘a’; c <= ‘z’; c++)
 		_putchar(c);
