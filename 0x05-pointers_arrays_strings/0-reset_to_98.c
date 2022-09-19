@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * reset_to_98 - updates the value it points to 98
- * int *n - pointer with parameter of n
+ * @n: pointer
  *
  * Return: Always 0
  */
