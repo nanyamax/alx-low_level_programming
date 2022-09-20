@@ -7,22 +7,16 @@
  */
 void rev_string(char *s)
 {
-	int length, c;
-	char *begin, *end, *temp;
+	char *s_copy;
+	int i, j;
 
-	length = strlen(s);
-	begin = s;
-	end = s;
-
-	for (c = 0; c < length - 1; c++)
-	end++;
-
-	for (c = 0; c < length / 2; c++)
+	s_copy = (char *) malloc(strlen(s) + 1);
+	j = 0;
+	for (i = (strlen(s) - 1); i >= 0; i--)
 	{
-		temp = *end;
-		*end = *begin;
-		*begin = temp;
-		begin++;
-			end--;
+		s_copy[i] = s[j];
+		j++;
 	}
+	s_copy[strlen(s)] = '\0';
+	strcpy(s, s_copy);
 }
