@@ -1,4 +1,5 @@
-#incude "main.h"
+#include "main.h"
+#include <string.h>
 /**
  * puts2 - prints every character of a string
  * @str: pointer
@@ -17,7 +18,7 @@ void puts2(char *str)
 	{
 		if (str[i] != '\0')
 		{
-			putchar(str[i]);
+			_putchar(str[i]);
 			i += 2;
 		}
 		else
