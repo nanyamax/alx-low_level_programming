@@ -6,11 +6,11 @@
  * @j: the number to the test for the square root of @i
  * Return: square root
  */
-int helper(int a, int b)
+int helper(int i, int j)
 {
 	if (j * j > i)
 		return (-1);
-	else if (j * j == a)
+	else if (j * j == i)
 		return (j);
 	else
 		return (helper(i, j + 1));
