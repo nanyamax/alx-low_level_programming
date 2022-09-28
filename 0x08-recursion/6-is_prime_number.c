@@ -13,7 +13,7 @@ int primeCheck(int i, int j)
 		return (0);
 	else if (i == j)
 		return (1);
-	else if (a > b)
+	else if (i > j)
 		primeCheck(i, j + 1);
 
 	return (1);
