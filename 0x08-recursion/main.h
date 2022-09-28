@@ -15,6 +15,9 @@ int _strlen(char *str);
 int check_palindrome(int l, int r, char *p);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+char *test(char *s5, char *s6, char *t5, char *t6);
+char *wildcard(char *s3, char *s4);
+
 
 
 #endif
