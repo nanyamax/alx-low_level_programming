@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - entry point
+ * main - prints arguments
  *
  * @argc: argument count
  * @argv: argument vector
@@ -9,7 +9,7 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	_printf("\%s\"\n", argv[0]);
+	_printf("%s\n", argv[0]);
 	return (0);
 }
 
