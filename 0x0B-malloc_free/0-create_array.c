@@ -5,7 +5,7 @@
  *
  * @size: size of array to be created
  * @c: char to initialize the array with
- * Return: pointer to the array or Null if malloc fails
+ * Return: pointer to the array or NULL if malloc fails
  */
 char *create_array(unsigned int size, char c)
 {
@@ -13,13 +13,14 @@ char *create_array(unsigned int size, char c)
 	char *n;
 
 	if (size == 0)
-		return (Null);
+		return (NULL);
 	n = malloc(size * sizeof(char));
-	if (n == Null)
+
+	if (n == NULL)
 	{
-		return (Null);
+		return (NULL);
 	}
-	for (m == 0; m < size; m++)
+	for (m = 0; m < size; m++)
 	{
 		n[m] = c;
 	}
