@@ -2,7 +2,7 @@ CC = gcc
 #compiler to use
 SRC = main.c school.c
 
-all: school
+all: $(SRC)
 
 school:
-	gcc main.c school.c -o school
+	$(CC) $(SRC) -o school
