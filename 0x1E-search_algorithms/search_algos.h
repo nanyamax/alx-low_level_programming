@@ -1,5 +1,5 @@
-#IFNDEF SEARCH_ALGOS_H
-#DEFINE SEARCH_ALGOS_H
+#ifndef SEARCH_ALGOS_H
+#define SEARCH_ALGOS_H
 
 #include <math.h>
 #include <stdio.h>
@@ -48,4 +48,4 @@ int advanced_binary(int *array, size_t size, int value);
 listint_t *jump_list(listint_t *list, size_t size, int value);
 skiplist_t *linear_skip(skiplist_t *list, int value);
 
-#ENDIF
+#endif
