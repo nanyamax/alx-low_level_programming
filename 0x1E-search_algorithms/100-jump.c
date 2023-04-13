@@ -15,36 +15,43 @@
   *              Uses the square root of the array size as the jump step.
   */
 
-int jump_search(int *array, size_t size, int value) {
-    if (array == NULL || size == 0) {
-        return -1;
-    }
+int jump_search(int *array, size_t size, int value)
+{
+	if (array == NULL || size == 0)
+	{
+		return (-1);
+	}
 
-    int step = sqrt(size);
-    int prev = 0;
+	int step = sqrt(size);
+	int prev = 0;
 
-    while (array[step - 1] < value) {
-        prev = step;
-        step += sqrt(size);
+	while (array[step - 1] < value)
+	{
+		prev = step;
+		step += sqrt(size);
 
-        if (prev >= size) {
-            return -1;
-        }
-    }
+		if (prev >= size)
+		{
+			return (-1);
+		}
+	}
 
-    while (array[prev] < value) {
-        prev++;
+	while (array[prev] < value)
+	{
+		prev++;
 
-        if (prev == fmin(step, size)) {
-            return -1;
-        }
-    }
+		if (prev == fmin(step, size))
+		{
+			return (-1);
+		}
+	}
 
-    if (array[prev] == value) {
-        printf("%d\n", value);
-        return prev;
-    }
+	if (array[prev] == value)
+	{
+		printf("%d\n", value);
+		return (prev);
+	}
 
-    return -1;
+	return (-1);
 }
 
